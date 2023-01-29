@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500&display=swap');
+html{
+      scroll-behavior: smooth;
+}
+body{
+      font-family: 'Alegreya Sans SC',sans-serif;
+      background-color: #212121;
+}
+.banner{
+      width: 100%;
+      height:  98vh;
+      opacity: 70%;
+      background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url(images/FEAT_ID.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 24px;
+}
+.header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+.header h1{
+      font-size: 75px;
+      margin-left: 12px;
+      color: #ffffff;
+      font-variant: small-caps;
+      margin-top: 20px;
+}
+.header h1 span{
+      color: rgb(214, 214, 69);
+}
+.header ul li{
+      font-size: 30px;
+      color: #ffffff;
+      list-style: none;
+      display: inline-block;
+      cursor: pointer;
+      text-align: center;
+      margin: 0px 20px;
+}
+.header ul li span {
+      color: rgb(214, 214, 69);
+}
+.header ul li:hover{
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      transform: scale(1.2);
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: linear;
+}
+.content{
+      text-align: center;
+      font-size: 50px;
+      color:white;
+}
+.content span{
+      color: rgb(214, 214, 69);
+      font-variant: small-caps;
+      justify-content: space-between;
+}
+.content h1{
+   font-weight: 700;
+      margin-top: 150px;
+      font-size: 100px;
+    margin-bottom: 0px;
+}
+
+.content p{
+      margin-top: 0px;
+      font-size: 40px;
+      letter-spacing: 1px;
+}
+.buttons button{
+      font-size: 17px;
+      width: 200px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 15px;
+      padding: 5px;
+      transition: all 0.1s linear;
+      background: transparent;
+      font-weight: bold;
+      transition: all 1s;
+}
+
+#btn-abt{
+      color:#ffffff;
+      border: 2px solid  rgb(214, 214, 69);
+}
+
+#btn-cont{
+      color: #ffffff;
+      border: 2px solid  rgb(214, 214, 69);
+}
+
+#btn-cont:hover{
+      cursor: pointer;
+      background-color:  rgb(214, 214, 69);
+      width: 17%;
+      border: none;
+  }
+#btn-abt:hover{
+      cursor: pointer;
+      background-color: rgb(214, 214, 69);
+      width: 17%;
+      border: none;
+  }
+  .about-ceo h2{
+      margin-bottom: 0px;
+  }
+  .img img{
+      float: right;
+      margin-top: 20px;
+      margin-bottom: 13px;
+      margin-right: 50px;
+      margin-left:50px;
+      width: 270px;
+      height: 370px;
+      border-radius: 24px;
+  }
+  .img:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .about-ceo{
+      color:#ffffff;
+  }
+  .about-ceo p{
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 500;
+  }
+  .about-us{
+      font-family: 'Catamaran', sans-serif;
+      margin-top: 5px;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-right: 10px;
+      background-color: rgb(22 78 99);;
+      border-radius: 24px;
+      margin-right: 250px;
+  }
+  .about-us h1 span{
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 100;
+      color:#ffffff;
+      font-variant: small-caps;
+      justify-content: space-between;
+  }
+  .about-us h1{
+      font-size: 50px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .about-us h2{
+      font-size: 30px;
+      margin-top: 0px;
+  }
+  .about-us h2 span{
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 300;
+      color:#ffffff;
+      font-variant: small-caps;
+      justify-content: space-between;
+  }
+  .about-us h3{
+      font-family: 'Catamaran', sans-serif;
+      font-weight: 200;
+      font-size: 20px;
+      margin-top: 0px;
+  }
+  #projects{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 50px;
+      text-align: center;
+      color:white;
+      margin-bottom: 0px;
+      font-variant: small-caps;
+      margin-top: 0px;
+  }
+  #projects h1 span{
+      font-variant: small-caps;
+      color:blueviolet;
+  }
+slide-show*{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+}
+.slide-show{
+      border-radius: 24px;
+      margin-left: 70px;
+      margin-bottom: 20px;
+      width: 90%;
+      height: 550px;
+      display: grid;
+      align-content: center;
+      background-image: url("images/a.jpg");
+      background-size: 100% 100%;
+      animation: changeImage 20s linear infinite;
+
+}
+.slide-show:hover{
+      transition: all 1s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+}
+@keyframes changeImage {
+   0%{
+      background-image: url("images/2.jpg");
+   }
+   20%{
+      background-image: url("images/a.jpg");
+   }
+   
+   40%{
+      background-image: url("images/b.jpg");
+   }
+   60%{
+      background-image: url("images/c.jpg");
+   }
+   80%{
+      background-image: url("images/Living-room-desk.jpg");
+   }
+   100%{
+      background-image: url("images/3.jpg");
+   }
+}
+.one{
+      float: right;
+      margin-top: 50px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: 13px;
+      width: 350px;
+      height: 350px;
+      border-radius: 24px;
+}
+.two{
+      float: right;
+      margin-top: 50px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: 13px;
+      width: 350px;
+      height: 350px;
+      border-radius: 24px;
+}
+.three{
+      float: right;
+      margin-top: 50px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: 13px;
+      width: 350px;
+      height: 350px;
+      border-radius: 24px;
+}
+.one:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .two:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .three:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+.table{
+      width: 27%;
+      height: 420px;
+      font-family: 'Catamaran', sans-serif;
+      margin-top: 0px;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-right: 10px;
+      background-color: rgb(153 27 27);
+      border-radius: 24px;
+      margin-right: 250px;
+      color:#ffffff;
+}
+.table h1{
+      font-variant: small-caps;
+      font-size: 40px;
+}
+
+.bedroom img{
+      float: left;
+      margin-top: 50px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: 13px;
+      width: 350px;
+      height: 350px;
+      border-radius: 24px;
+}
+.bedd:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .beddd:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .bedddd:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .bed{
+   
+      width: 27%;
+      height: 415px;
+      font-family: 'Catamaran', sans-serif;
+      margin-top: 0px;
+      margin-left: 72%;
+      padding-left: 7px;
+      padding-top: 5px;
+      padding-right: 10px;
+      background-color: rgb(19 78 74);;
+      border-radius: 24px;
+      margin-right: 0px;
+      color:#ffffff;
+}
+.bed h1{
+     font-variant: small-caps;
+     font-size: 40px;
+}
+.border{
+      border: 1px solid  rgb(255, 255, 255);
+}
+.borderr{
+      border: 1px solid  rgb(255, 255, 255);
+}
+.bathroom img{
+      float: right;
+      margin-top: 50px;
+      margin-bottom: 13px;
+      margin-left: 10px;
+      margin-right: 13px;
+      width: 350px;
+      height: 350px;
+      border-radius: 24px;
+}
+.bath:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .bathh:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .bathhh:hover{
+      transition: all 0.5s linear;
+      cursor: pointer;
+      transform: scale(1.03);
+  }
+  .washroom{
+      width: 27%;
+      height: 417px;
+      font-family: 'Catamaran', sans-serif;
+      margin-top: 0px;
+      margin-left: 0%;
+      padding-left: 7px;
+      padding-top: 5px;
+      padding-right: 10px;
+      background-color:rgb(154 52 18);;
+      border-radius: 24px;
+      margin-right: 0px;
+      color:#ffffff;
+}
+  .washroom h1{
+      font-variant: small-caps;
+      font-size: 40px;
+}
+.footer-area{
+      margin-top: 10px;
+      background-color: rgb(255, 252, 252);
+      height: 9vh;
+      border-radius: 24px;
+  }
+  .footer-area p{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 15px;
+      margin: 0px 0px 10px 0px;
+  }
+  .footer-area{
+      text-align: center;
+      font-family: 'Catamaran', sans-serif;
+      font-size: 15px;
+      color:black;
+      font-weight: 100px;
+  }
+  .footer-area img{
+      width: 30px;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      margin-left: 5px;
+      margin-right: 5px;
+      filter: grayscale(100%);    
+      transition: all 0.5s linear;
+      opacity: 0.5;
+  }
+  .footer-area p,img:hover{
+      cursor: pointer;
+      filter:grayscale(0%);
+      opacity: 1;
+      transform: scale(1.04);
+      }
+.border1{
+     
+      margin-top:0px;
+}
+.bor{
+     
+      margin-top: 20px;
+}
+.abt{
+
+      margin-top: 0px;
+      margin-bottom: 0px;
+}
+@media (max-width: 1517px){
+      .dining img{
+            height: 250px;
+            width: 250px;
+      }
+      .table p{
+            font-size: 15px;
+      }
+     .table{
+      height: 350px;
+      margin-left: 70PX;
+     }
+
+     .bedroom img{
+      height: 250px;
+      width: 250px;
+}
+.bed p{
+      font-size: 15px;
+}
+.bed{
+height: 350px;
+}
+.bathroom img{
+      height: 250px;
+      width: 250px;
+}
+.washroom p{
+      font-size: 15px;
+}
+.washroom{
+height: 350px;
+margin-left: 70PX;
+}
+}
+
+ 
+@media (max-width: 1272px){
+      .dining img{
+            margin-left: 0px;
+            margin-right: 0px;
+      }
+      .table p{
+            font-size: 13px;
+      }
+      .table{
+            margin-left: 0px;
+}
+.bedroom img{
+      margin-left: 0px;
+      margin-right: 0px;
+}
+.bed p{
+      font-size: 13px;
+}
+.bed{
+      margin-right: 0px;
+}
+
+.bathroom img{
+   margin-left: 0px;
+   margin-right: 0px;
+}
+.washroom p{
+      font-size: 13px;
+}
+.washroom{
+      margin-left: 0px;
+}
+}
+
+
+ 

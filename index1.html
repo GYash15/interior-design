@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+            Form
+        </title>
+       <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        body:before{
+            content: '';
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("images/3.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+        .contact-form{
+            top: 4%;
+            margin-left: 30%;
+            position: absolute;
+            width: 500px;
+            height: 570px;
+            padding: 80px 40px;
+            background: rgba(0,0,0,0.6);
+            transform: -50% -50%;
+        }
+        .contact-form h1{
+            color: #ffffff;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0px;
+        }
+        .avatar{
+            margin-left: 17%;
+            margin-bottom: 10px;
+        }
+        .form{
+            color:#ffffff;
+            font-size: 24px;
+        }
+        .form input[type=email],
+        .form input[type=password]{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid white;
+            background: transparent;
+            outline: none;
+            height: 35px;
+            color:#ffffff;
+            font-size: 15px;
+        }
+        .form button{
+           margin-left: 150px;
+           text-align: center;
+           width: 40%;
+           color:#000000;
+           font-size: 20px;
+           cursor: pointer;
+           background-color: #ffffff;
+           border-radius: 10px;
+           border: none;
+           outline: none;
+        }
+        .form input[type=checkbox]{
+            width: 3%;
+            cursor: pointer;
+        }
+        .check{
+            text-align: left;
+        }
+       </style>
+    </head>
+    <body>
+        <div class="background">
+        <div class="contact-form">
+            <img src="images/110-1104743_business-man-and-woman-with-documents-clip-arts.png" alt="background image" class="avatar">
+            <h1>contact form</h1><br><br>
+            <form class="form">
+                <label>E-Mail -</label><bR>
+                <input type="email" required><bR><BR>
+                <label>Password -</label><bR>
+                <input type="password" required><bR><BR>
+                <button onclick="alert('Your Response Have Been Submited')">SIGN IN</button><bR><BR>
+                <input type="Checkbox" class="check">Remember Me
+                </div>
+            </form>
+        </div>
+
+
+  
